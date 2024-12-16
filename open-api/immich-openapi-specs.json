@@ -8406,7 +8406,7 @@
       },
       "AssetMediaSize": {
         "enum": [
-          "original",
+          "fullsize",
           "preview",
           "thumbnail"
         ],
@@ -11942,6 +11942,9 @@
           "extractEmbedded": {
             "type": "boolean"
           },
+          "fullsizePreview": {
+            "type": "boolean"
+          },
           "preview": {
             "$ref": "#/components/schemas/SystemConfigGeneratedImageDto"
           },
@@ -11952,6 +11955,7 @@
         "required": [
           "colorspace",
           "extractEmbedded",
+          "fullsizePreview",
           "preview",
           "thumbnail"
         ],
